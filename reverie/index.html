@@ -24,75 +24,19 @@
   </head>
 
   <body>
-    <h1>merhaba onur</h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand ms-4" href="#">
-          <img src="assets/img/deneme.png" alt="" width="100"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link active dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Hizmetler
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Web Dizayn</a></li>
-                <li><a class="dropdown-item" href="#">Seo</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Sosyal Medya Yönetimi</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link telli" aria-current="page" href="#"
-                >Firmalar</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link telli" href="#">Blog</a>
-            </li>
-            ​
-            <li class="nav-item">
-              <a class="nav-link telli" aria-current="page" href="#"
-                >Nasıl Çalışır</a
-              >
-            </li>
-            ​
-            <li class="nav-item">
-              <a class="nav-link telli" aria-current="page" href="#"
-                >İletişim</a
-              >
-            </li>
-            ​
-            <li class="nav-item">
-              <a class="nav-link telli" aria-current="page" href="#"
-                >Kayıt Ol</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header>
+      <a href="#" class="logo"><img src="./assets/img/deneme3.png" alt="" width="25%"></a>
+      <div class="menuToggle" onclick="menuToggle();"></div>
+      <ul class="navigation">
+        <li><a href="#banner onclick="menuToggle();"">HİZMETLER</a></li>
+        <li><a href="#about onclick="menuToggle();"">FİRMALAR</a></li>
+        <li><a href="#menu onclick="menuToggle();"">NASIL ÇALIŞIR</a></li>
+        <li><a href="#expert onclick="menuToggle();"">BLOG</a></li>
+        <li><a href="#testimonials onclick="menuToggle();"">İLETİŞİM</a></li>
+        <li><a href="#contact onclick="menuToggle();"">KAYDOL</a></li>
+      </ul>
+    </header>
+
     <section class="banner">
       <div class="container">
         <div class="row">
@@ -160,113 +104,116 @@
         </div>
       </div>
     </section>
+
     <section class="projects">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 m-5">
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/papirus.PNG"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">PAPIRUS</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 m-5">
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/papirus.PNG"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">PAPIRUS</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/lighthouse.PNG"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">LIGHTHOUSE</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/lighthouse.PNG"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">LIGHTHOUSE</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/gearVR.PNG"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">GEAR VR</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/gearVR.PNG"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">GEAR VR</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/madduki.jpg"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">MADDUKI</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/madduki.jpg"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">MADDUKI</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/theSpical.PNG"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">THE SPICAL</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/theSpical.PNG"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">THE SPICAL</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow">
-            <img
-              src="assets/img/veranda.PNG"
-              class="card-img-top"
-              height="180"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">VERANDA</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+          <div class="col">
+            <div class="card shadow">
+              <img
+                src="assets/img/veranda.PNG"
+                class="card-img-top"
+                height="180"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">VERANDA</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -274,221 +221,292 @@
     </section>
 
     <section class="profil">
-      <div class="card">
-        <div class="card-box shadow">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Aslı Yılmaz</h5>
+      <div class="container my-4">
+        <h1 class="container-title">TEAM MATES</h1>
+        <div class="row justify-content-center">
+          <div class="card">
+            <div class="card-box shadow">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+            <h6 class="card-title">Aslı Yılmaz</h6>
           </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Şeyma Telli</h5>
-          </div>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
 
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+            <h6 class="card-title">Şeyma Telli</h6>
           </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Sait Kendir</h5>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Sait Kendir</h6>
           </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Onur Nişancı</h6>
           </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Onur Nişancı</h5>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Burcu Merve</h6>
           </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Rüveyda Ak</h6>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Burcu Merve</h5>
-            >
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Feride Akdağ</h6>
           </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Rüveyda Ak</h5>
-          </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Feride Akdağ</h5>
-          </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-box">
-          <div class="card-box_img">
-            <img src="assets/img/nimet.png" alt="" />
-            <h5 class="card-title">Esengül Reis</h5>
-          </div>
-          <div class="card-box_back">
-            <p>Esengül Reis</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="card">
+            <div class="card-box">
+              <div class="card-box_img">
+                <img src="assets/img/nimet.png" alt="" />
+              </div>
+              <div class="card-box_back">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="self-button">Çalışmalarım</a>
+              </div>
+            </div>
+
+            <h6 class="card-title">Esengül Reis</h6>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="hizmetler col-md-4 mb-4 mb-md-0">
+            <h3>HİZMETLER</h3>
+            <ul>
+              <li><a href="#"> Web Dizayn</a></li>
+              <li><a href="#"> Sosyal Medya Yonetimi</a></li>
+              <li><a href="#"> SEO</a></li>
+            </ul>
+          </div>
+          <div class="sosyal col-md-4 mb-4 mb-md-0">
+            <h3>SOSYAL MEDYA</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </div>
+
+          <div class="iletisim col-md-4 mb-4 mb-md-0">
+            <h3>İLETİSIM</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-map-marker-alt"> </i> Bağlarbaşı cad.
+                  Kadıköy / İstanbul</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-phone-alt"></i> 0 (555) 555 5555</a
+                >
+              </li>
+              <li>
+                <a href="mailto:reveriedesign@yahoo.com"
+                  ><i class="fas fa-envelope"></i> reveriedesign@yahoo.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <span>
+              &copy; 2021 <a href="#">Reverie Design</a> - Her hakkı saklıdır.
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -498,5 +516,18 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function menuToggle() {
+        const menuToggle = document.querySelector(".menuToggle");
+        const navigation = document.querySelector(".navigation");
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
