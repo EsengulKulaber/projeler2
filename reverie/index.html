@@ -24,17 +24,16 @@
   </head>
 
   <body>
-
     <header>
-      <a href="#" class="logo">Food<span>.</span></a>
+      <a href="#" class="logo"><img src="./assets/img/deneme3.png" alt="" width="25%"></a>
       <div class="menuToggle" onclick="menuToggle();"></div>
       <ul class="navigation">
-        <li><a href="#banner onclick="menuToggle();"">Home</a></li>
-        <li><a href="#about onclick="menuToggle();"">About</a></li>
-        <li><a href="#menu onclick="menuToggle();"">Menu</a></li>
-        <li><a href="#expert onclick="menuToggle();"">Expert</a></li>
-        <li><a href="#testimonials onclick="menuToggle();"">Testimonials</a></li>
-        <li><a href="#contact onclick="menuToggle();"">Contact</a></li>
+        <li><a href="#banner onclick="menuToggle();"">HİZMETLER</a></li>
+        <li><a href="#about onclick="menuToggle();"">FİRMALAR</a></li>
+        <li><a href="#menu onclick="menuToggle();"">NASIL ÇALIŞIR</a></li>
+        <li><a href="#expert onclick="menuToggle();"">BLOG</a></li>
+        <li><a href="#testimonials onclick="menuToggle();"">İLETİŞİM</a></li>
+        <li><a href="#contact onclick="menuToggle();"">KAYDOL</a></li>
       </ul>
     </header>
 
@@ -522,7 +521,7 @@
         const header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
       });
-​
+
       function menuToggle() {
         const menuToggle = document.querySelector(".menuToggle");
         const navigation = document.querySelector(".navigation");

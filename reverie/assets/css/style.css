@@ -63,6 +63,7 @@ header.sticky .navigation li a {
 header .navigation li a:hover {
   color: #ff0157;
 }
+
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -90,8 +91,8 @@ header .navigation li a:hover {
     color: #111;
     font-size: 1.6em;
   }
-  ​ .menuToggle {
-    border: 2px solid black;
+
+  .menuToggle {
     position: relative;
     width: 40px;
     height: 40px;
@@ -117,6 +118,7 @@ header .navigation li a:hover {
     padding: 10px 20px;
   }
 }
+
 /*NAVBAR FINSH*/
 
 /*BANNER START*/
