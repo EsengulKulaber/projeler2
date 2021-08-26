@@ -4,9 +4,10 @@
   --color3: #020202;
   --color4: rgb(250, 8, 8);
   --color5: white;
-  --color6: red;
+  --color6: #231F20;
   --color7: white;
   --color8: #6e2935;
+  --color9: #D5963E;
 }
 * {
   box-sizing: border-box;
@@ -20,7 +21,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+
   z-index: 10000;
   display: flex;
   justify-content: space-between;
@@ -29,21 +33,13 @@ header {
 }
 header.sticky {
   background: #fff;
-  padding: 10px 100px;
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-header .logo {
-  color: #fff;
-  font-weight: 700;
-  font-size: 2em;
-  text-decoration: none;
-}
-header.sticky .logo {
-  color: #111;
-}
-header .logo span {
-  color: #ff0157;
-}
+
 header .navigation {
   position: relative;
   display: flex;
@@ -51,14 +47,20 @@ header .navigation {
 header .navigation li {
   list-style: none;
   margin-left: 30px;
+
 }
 header .navigation li a {
   text-decoration: none;
   font-weight: 700;
-  color: #fff;
+  color: white;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color9); 
+  
 }
 header.sticky .navigation li a {
-  color: #111;
+  color: black;
+  border-style: none;
+  font-size: 1.1rem;
 }
 header .navigation li a:hover {
   color: #ff0157;
@@ -82,13 +84,15 @@ header .navigation li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #fff;
+    background: var(--color6);
+    
   }
   header .navigation li {
     margin-left: 0;
+    margin-top: 2rem;
   }
   header .navigation li a {
-    color: #111;
+    color: #fff;
     font-size: 1.6em;
   }
 
@@ -107,9 +111,14 @@ header .navigation li a:hover {
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
+    
   }
   header.sticky .menuToggle {
     filter: invert(1);
+    
+  }
+  header.sticky .navigation li a {
+    color: white;
   }
 }
 @media (max-width: 480px) {
@@ -120,6 +129,7 @@ header .navigation li a:hover {
 }
 
 /*NAVBAR FINSH*/
+
 
 /*BANNER START*/
 .banner {
@@ -154,28 +164,35 @@ header .navigation li a:hover {
 
 .banner .row {
   padding: 2rem;
+
 }
 .banner .icerik {
   z-index: 1;
   color: var(--color5);
+
 }
+
 .banner .kutup-yildizi {
-  font-size: 17px;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 .banner button {
   font-size: 1.3rem;
   font-weight: 600;
   color: white;
-  background-color: var(--color4);
+  background-color: #812938;
+  margin-top: 2rem;
+
 }
 .banner .card {
   text-align: center;
   padding-top: 1rem;
-  color: #003b13;
+  color: #812938;
 }
 
 .banner .card .card-body {
-  color: var(--color4);
+  color: var(--color6); 
+  font-weight: 500; 
 }
 .banner .card i {
   font-size: 2rem;
@@ -241,7 +258,7 @@ ol {
 }
 .profil .container-title {
   text-align: center;
-  color: #491922;
+  color: var(--color8);
   transform: scale(1) 500ms;
   position: relative;
   animation-name: example;
@@ -280,11 +297,12 @@ ol {
   margin: 2rem;
   margin-bottom: 5rem;
 }
+
 .profil h6.card-title {
   position: absolute;
   bottom: -4rem;
   z-index: 999;
-  border: 2px solid #491922;
+  border: 2px solid var(--color8);
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   padding-top: 0.25rem;
@@ -292,13 +310,12 @@ ol {
   border-radius: 10rem;
   color: rgb(252, 0, 0);
   background: rgba(255, 255, 255, 0.5);
-
   transition: background-color 800ms;
 }
 .profil .card:hover h6.card-title {
-  background-color: #491922;
+  background-color: var(--color8);
   color: white;
-  border-color: #491922;
+  border-color: var(--color8);
 }
 
 .profil .card-box {
@@ -306,12 +323,13 @@ ol {
   height: 320px;
   position: relative;
 }
+
 .profil .card-box:hover .card-box_img {
   transform: translateY(-100%) rotateX(90deg);
 }
 
 .profil .card-box .self-button {
-  background-color: #491922;
+  background-color: var(--color8);
   border-radius: 10rem;
   color: white;
   border: 2px solid white;
@@ -326,7 +344,7 @@ ol {
 .card-box_back li a:hover,
 .profil .card-box .self-button:hover {
   background-color: white;
-  color: #491922;
+  color: var(--color8);
   transition: all 800ms;
 }
 .profil .card-box_img {
@@ -349,7 +367,7 @@ ol {
 .profil .card-box_back {
   width: 100%;
   height: 100%;
-  background: rgb(73, 25, 34);
+  background: var(--color8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,25 +403,26 @@ ol {
 
 /* FOOTER START */
 footer {
-  background: #fed0cf6e;
+  background: var(--color6);
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.411);
+  box-shadow: inset 0 0 10px rgb(73, 25, 34);
 }
 footer h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: var(--color9);
 }
 footer a {
-  color: rgb(73, 25, 34);
+  color: white;
   font-size: 1.1rem;
   font-weight: 600;
 }
 footer a:hover,
 footer .sosyal a:hover i {
-  color: red;
+  color: rgb(197, 13, 13);
 }
 
 footer .container {
@@ -413,17 +432,23 @@ footer li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 footer .sosyal a {
   margin-right: 1rem;
 }
+
 footer .sosyal i {
   font-size: 2rem;
-  color: rgb(73, 25, 34);
+  color: white;
 }
 
 hr {
   height: 3px !important;
-  color: rgb(73, 25, 34);
+  color: var(--color9);
   opacity: 1;
+}
+
+footer .son {
+  color: white;
 }
 /* FOOTER FNISH */
