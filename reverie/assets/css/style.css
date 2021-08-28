@@ -4,10 +4,10 @@
   --color3: #020202;
   --color4: rgb(250, 8, 8);
   --color5: white;
-  --color6: #231F20;
+  --color6: #231f20;
   --color7: white;
   --color8: #6e2935;
-  --color9: #D5963E;
+  --color9: #d5963e;
 }
 * {
   box-sizing: border-box;
@@ -47,15 +47,13 @@ header .navigation {
 header .navigation li {
   list-style: none;
   margin-left: 30px;
-
 }
 header .navigation li a {
   text-decoration: none;
   font-weight: 700;
   color: white;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color9); 
-  
+  border-bottom: 2px solid var(--color9);
 }
 header.sticky .navigation li a {
   color: black;
@@ -85,7 +83,6 @@ header .navigation li a:hover {
     align-items: center;
     flex-direction: column;
     background: var(--color6);
-    
   }
   header .navigation li {
     margin-left: 0;
@@ -111,11 +108,9 @@ header .navigation li a:hover {
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    
   }
   header.sticky .menuToggle {
     filter: invert(1);
-    
   }
   header.sticky .navigation li a {
     color: white;
@@ -129,7 +124,6 @@ header .navigation li a:hover {
 }
 
 /*NAVBAR FINSH*/
-
 
 /*BANNER START*/
 .banner {
@@ -164,12 +158,10 @@ header .navigation li a:hover {
 
 .banner .row {
   padding: 2rem;
-
 }
 .banner .icerik {
   z-index: 1;
   color: var(--color5);
-
 }
 
 .banner .kutup-yildizi {
@@ -182,7 +174,6 @@ header .navigation li a:hover {
   color: white;
   background-color: #812938;
   margin-top: 2rem;
-
 }
 .banner .card {
   text-align: center;
@@ -191,8 +182,8 @@ header .navigation li a:hover {
 }
 
 .banner .card .card-body {
-  color: var(--color6); 
-  font-weight: 500; 
+  color: var(--color6);
+  font-weight: 500;
 }
 .banner .card i {
   font-size: 2rem;
