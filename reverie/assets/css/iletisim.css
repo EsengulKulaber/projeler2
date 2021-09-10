@@ -404,6 +404,28 @@ section.social {
 section.social-media img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+section.social-media .banner {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.social-media .row .banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#29323c, #485563);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+.social-media .row .banner::before {
+  content: "SOCIAL MEDIA";
   border-radius: 15px;
 }
 section.social-media .banner {
@@ -420,6 +442,8 @@ section.social-media .banner::after {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
+  font-size: 5rem;
+}
   font-size: 4rem;
   text-shadow: 0px 0px 4px black;
 }
@@ -443,3 +467,96 @@ section.cards- {
 }
 
 /* SOCIAL MEDIA FNISH */
+/* wordpress START */
+.wordpress .projects .imgBx {
+  padding: 100px 0;
+}
+.wordpress .projects .imgBx img {
+  width: 100%;
+  max-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+}
+.wordpress h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+.wordpress .all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.wordpress .project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 400px;
+  margin: 0;
+  width: 100%;
+}
+.wordpress .project-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.wordpress .project-info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+.wordpress .project-info h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.wordpress .project-info p {
+  color: white;
+}
+.wordpress .project-img {
+  flex-basis: 50%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.wordpress .project-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.7;
+}
+.wordpress .project-img img {
+  transition: 0.3s ease transform;
+}
+.wordpress .project-item:hover .project-img img {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .wordpress .all-projects .project-item {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  .wordpress .all-projects .project-img {
+    display: none;
+  }
+  .wordpress .all-projects .project-info {
+    border-radius: 10px;
+  }
+}
+
+/* wordpress FNISH */
