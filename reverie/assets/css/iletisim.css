@@ -426,17 +426,6 @@ section.social-media .banner {
 }
 .social-media .row .banner::before {
   content: "SOCIAL MEDIA";
-  border-radius: 15px;
-}
-section.social-media .banner {
-  position: relative;
-}
-section.social-media .banner img {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-section.social-media .banner::after {
-  content: "SOCIAL MEDİA";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -444,9 +433,7 @@ section.social-media .banner::after {
   color: black;
   font-size: 5rem;
 }
-  font-size: 4rem;
-  text-shadow: 0px 0px 4px black;
-}
+
 .social-icerik {
   color: white;
   font-size: 1.2rem;
@@ -467,7 +454,8 @@ section.cards- {
 }
 
 /* SOCIAL MEDIA FNISH */
-/* wordpress START */
+
+/* WORDPRESS START */
 .wordpress .projects .imgBx {
   padding: 100px 0;
 }
